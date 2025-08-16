@@ -95,7 +95,8 @@ textarea {
 }
 
 .textarea-container textarea::placeholder {
-  color: var(--black 10%);
+  color: #121417;
+;
 }
 
 @media screen and (min-width: 768px) {
