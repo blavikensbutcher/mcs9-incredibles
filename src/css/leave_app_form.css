@@ -160,6 +160,10 @@ textarea {
     padding-left: 157.5px;
     padding-right: 157.5px;
   }
+  .leave-item-text-down {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .form-input::placeholder {
