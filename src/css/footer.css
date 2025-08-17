@@ -124,7 +124,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28;
-  letter-spacing: -0.02;
+  letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.6);
   margin-top: 20px;
   margin-bottom: 4px;
@@ -148,7 +148,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28;
-  letter-spacing: -0.02;
+  letter-spacing: -0.02em;
   width: 100%;
 }
 
@@ -157,7 +157,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.29;
-  letter-spacing: 0%;
+  letter-spacing: 0;
 }
 
 .footer-legal-link {
@@ -166,7 +166,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28;
-  letter-spacing: -0.02;
+  letter-spacing: -0.02em;
   text-decoration: none;
 }
 
