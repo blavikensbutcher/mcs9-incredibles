@@ -225,9 +225,52 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
     <main>
-      <!-- Start hero section -->
-<section id="hero" class="hero-section">
+      <section id="hero" class="hero-section">
   <div class="container hero-content">
+    <picture class="hero-bg">
+      <!-- Desktop -->
+      <source
+        srcset="/mcs9-incredibles/assets/block_desk@2x-DnBTkpK-.avif"
+        type="image/avif"
+        media="(min-width:1024px)"
+      />
+      <source
+        srcset="/mcs9-incredibles/assets/block_desk@2x-DtOenr8d.jpg"
+        type="image/jpeg"
+        media="(min-width:1024px)"
+      />
+
+      <!-- Tablet -->
+      <source
+        srcset="/mcs9-incredibles/assets/block_tab@2x-DZMV88UO.avif"
+        type="image/avif"
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="/mcs9-incredibles/assets/block_tab@2x-DNpErE00.jpg"
+        type="image/jpeg"
+        media="(min-width:768px)"
+      />
+
+      <!-- Mobile -->
+      <source
+        srcset="/mcs9-incredibles/assets/block_mob@2x-7w7UPMO9.avif"
+        type="image/avif"
+        media="(max-width:767px)"
+      />
+      <source
+        srcset="/mcs9-incredibles/assets/block_mob@2x-C1aPCDs9.jpg"
+        type="image/jpeg"
+        media="(max-width:767px)"
+      />
+
+      <img
+        src="/mcs9-incredibles/assets/block_desk@2x-DtOenr8d.jpg"
+        alt="Hero background"
+        class="hero-bg-img"
+      />
+    </picture>
+
     <h1 class="hero-text animated">
       Discover the joy of learning
       <span class="hero-english">English</span> with us!
@@ -235,6 +278,7 @@
     <a href="#application-form" class="button hero-button animated"
       >Leave an application</a
     >
+
     <div class="hero-checkmark">
       <a
         href="#footer"
@@ -242,16 +286,12 @@
         aria-label="Footer button"
       >
         <svg class="hero-svg" aria-hidden="true">
-          <use
-            class="hero-use"
-            xlink:href="/mcs9-incredibles/assets/icons-C7iuSI4g.svg#icon-checkmark"
-          ></use>
+          <use xlink:href="/src/img/icons.svg#icon-checkmark"></use>
         </svg>
       </a>
     </div>
   </div>
 </section>
-<!-- End hero section -->
 
       <section id="about" class="section about">
   <div class="container">
