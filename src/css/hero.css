@@ -10,14 +10,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(
-    95.97deg,
-    rgba(0, 0, 0, 0.4) 36.36%,
-    rgba(0, 0, 0, 0) 51.43%
-  );
-}
-
-.hero-section {
   background-image:
     linear-gradient(
       95.97deg,
@@ -27,7 +19,20 @@
     url(/img/hero/block_mob@1x.jpg);
 }
 
-@supports (background-image: image-set(url('test.jpg') 1x)) {
+.hero-section {
+  background-image:
+    linear-gradient(
+      95.97deg,
+      rgba(0, 0, 0, 0.4) 36.36%,
+      rgba(0, 0, 0, 0) 51.43%
+    ),
+    -webkit-image-set(
+        url(/img/hero/block_mob@1x.jpg) 1x,
+        url(/img/hero/block_mob@2x.jpg) 2x
+      );
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .hero-section {
     background-image:
       linear-gradient(
@@ -35,12 +40,7 @@
         rgba(0, 0, 0, 0.4) 36.36%,
         rgba(0, 0, 0, 0) 51.43%
       ),
-      image-set(
-        url(/img/hero/block_mob@1x.avif) type('image/avif') 1x,
-        url(/img/hero/block_mob@2x.avif) type('image/avif') 2x,
-        url(/img/hero/block_mob@1x.jpg) type('image/jpeg') 1x,
-        url(/img/hero/block_mob@2x.jpg) type('image/jpeg') 2x
-      );
+      url(/img/hero/block_mob@2x.jpg);
   }
 }
 
@@ -117,7 +117,21 @@
       url(/img/hero/block_tab@1x.jpg);
   }
 
-  @supports (background-image: image-set(url('test.jpg') 1x)) {
+  .hero-section {
+    background-image:
+      linear-gradient(
+        95.97deg,
+        rgba(0, 0, 0, 0.4) 36.36%,
+        rgba(0, 0, 0, 0) 51.43%
+      ),
+      -webkit-image-set(
+          url(/img/hero/block_tab@1x.jpg) 1x,
+          url(/img/hero/block_tab@2x.jpg) 2x
+        );
+  }
+
+  /* Retina для планшетів */
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .hero-section {
       background-image:
         linear-gradient(
@@ -125,12 +139,7 @@
           rgba(0, 0, 0, 0.4) 36.36%,
           rgba(0, 0, 0, 0) 51.43%
         ),
-        image-set(
-          url(/img/hero/block_tab@1x.avif) type('image/avif') 1x,
-          url(/img/hero/block_tab@2x.avif) type('image/avif') 2x,
-          url(/img/hero/block_tab@1x.jpg) type('image/jpeg') 1x,
-          url(/img/hero/block_tab@2x.jpg) type('image/jpeg') 2x
-        );
+        url(/img/hero/block_tab@2x.jpg);
     }
   }
 
@@ -174,7 +183,21 @@
       url(/img/hero/block_desk@1x.jpg);
   }
 
-  @supports (background-image: image-set(url('test.jpg') 1x)) {
+  /* WebKit для десктопу */
+  .hero-section {
+    background-image:
+      linear-gradient(
+        95.97deg,
+        rgba(0, 0, 0, 0.4) 36.36%,
+        rgba(0, 0, 0, 0) 51.43%
+      ),
+      -webkit-image-set(
+          url(/img/hero/block_desk@1x.jpg) 1x,
+          url(/img/hero/block_desk@2x.jpg) 2x
+        );
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .hero-section {
       background-image:
         linear-gradient(
@@ -182,12 +205,7 @@
           rgba(0, 0, 0, 0.4) 36.36%,
           rgba(0, 0, 0, 0) 51.43%
         ),
-        image-set(
-          url(/img/hero/block_desk@1x.avif) type('image/avif') 1x,
-          url(/img/hero/block_desk@2x.avif) type('image/avif') 2x,
-          url(/img/hero/block_desk@1x.jpg) type('image/jpeg') 1x,
-          url(/img/hero/block_desk@2x.jpg) type('image/jpeg') 2x
-        );
+        url(/img/hero/block_desk@2x.jpg);
     }
   }
 
