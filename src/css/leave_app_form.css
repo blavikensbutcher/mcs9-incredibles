@@ -120,7 +120,7 @@ textarea {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.33;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   color: rgba(18, 20, 23, 0.5);
   margin-top: 16px;
 }
@@ -136,7 +136,7 @@ textarea {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-align: center;
   color: rgba(18, 20, 23, 0.8);
 
