@@ -96,7 +96,6 @@ textarea {
 
 .textarea-container textarea::placeholder {
   color: #121417;
-;
 }
 
 @media screen and (min-width: 768px) {
@@ -125,12 +124,26 @@ textarea {
   margin-top: 16px;
 }
 
+.leave-item-link-text-down {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.33;
+  letter-spacing: 0;
+  color: rgba(18, 20, 23, 0.5);
+  margin-top: 16px;
+}
+
 @media screen and (min-width: 768px) {
   .leave-item-text-down {
     font-size: 14px;
     line-height: 1.6;
   }
+  .leave-item-link-text-down {
+  font-size: 14px;
+  line-height: 1.6;
 }
+}
+
 
 .leave-item-text-up {
   font-weight: 400;
@@ -162,6 +175,10 @@ textarea {
   }
   .leave-item-text-down {
     font-size: 14px;
+    line-height: 1.71;
+  }
+
+  .leave-item-link-text-down {
     line-height: 1.71;
   }
 }
@@ -325,11 +342,8 @@ input[type='radio']:checked::after {
 
 /* validation */
 
-
 .leave-form .form-input:invalid:not(:placeholder-shown),
-.leave-form .form-textarea:invalid:not(:placeholder-shown){
+.leave-form .form-textarea:invalid:not(:placeholder-shown) {
   border-color: #e53935;
-  box-shadow: 0 0 6px rgba(229,57,53,.35);
+  box-shadow: 0 0 6px rgba(229, 57, 53, 0.35);
 }
-
-
