@@ -179,8 +179,7 @@ address {
   line-height: inherit;
 }
 
-.social-item {
-  padding: 8px;
+.footer-social-item {
   width: 44px;
   height: 44px;
   border-radius: 10px;
@@ -190,13 +189,10 @@ address {
   cursor: pointer;
 }
 
-.social-link-footer {
-  background: transparent;
-  width: 26px;
-  height: 26px;
-  color: var(--white);
-  transition: var(--common-transition);
-  transition-property: color;
+.footer-social-item:hover,
+.footer-social-item:focus {
+  border: 1px solid transparent;
+  background: var(--gradient-green);
 }
 
 .social-icon-footer {
@@ -220,7 +216,7 @@ address {
 }
 
 @media screen and (min-width: 1280px) {
- .footer-divider {
-  width: 1024px;
-}
+  .footer-divider {
+    width: 1024px;
+  }
 }
