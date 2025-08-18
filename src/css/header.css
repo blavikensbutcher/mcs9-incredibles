@@ -220,9 +220,10 @@
 }
 
 .social-link {
+ display: inline-flex; 
   background: transparent;
-  width: 26px;
-  height: 26px;
+  width: 44px;
+  height: 44px;
   color: var(--white);
   transition: var(--common-transition);
   transition-property: color;

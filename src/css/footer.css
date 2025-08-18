@@ -179,21 +179,7 @@ address {
   line-height: inherit;
 }
 
-.social-item {
-  padding: 8px;
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
-  border: 1px solid var(--white-border);
-  transition: var(--common-transition);
-  transition-property: border, background;
-  cursor: pointer;
-}
-
 .social-link-footer {
-  background: transparent;
-  width: 26px;
-  height: 26px;
   color: var(--white);
   transition: var(--common-transition);
   transition-property: color;
@@ -220,7 +206,7 @@ address {
 }
 
 @media screen and (min-width: 1280px) {
- .footer-divider {
-  width: 1024px;
-}
+  .footer-divider {
+    width: 1024px;
+  }
 }
